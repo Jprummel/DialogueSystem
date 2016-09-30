@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialogues>
+	<messages>
+		<message id="1">
+			<sourceNPC>Goblin guy</sourceNPC>
+			<text>Hi there</text>
+      <options>
+			  <option targetnode="2">Uhm ... hi.</option>
+			  <option targetnode="3">Hi there my name is [player_name].</option>
+			  <option targetnode="6">I have to go.</option>
+      </options>
+      <targetnodes>
+        <targetnode>2</targetnode>
+        <targetnode>3</targetnode>
+        <targetnode>6</targetnode>
+      </targetnodes>
+		</message>
+		<message id="2">
+			<sourceNPC>Goblin guy</sourceNPC>
+			<text>Whats wrong? are you scared because im a goblin?</text>
+      <options>
+        <option targetnode="3">Terrified.</option>
+        <option targetnode="3">No i was just suprised, aren´t goblins evil?</option>
+        <option targetnode="6">Uhm.. i have to go bye</option>
+      </options>
+      <targetnodes>
+        <targetnode>3</targetnode>
+        <targetnode>3</targetnode>
+        <targetnode>6</targetnode>
+      </targetnodes>
+		</message>
+		<message id="3">
+			<sourceNPC>Goblin guy</sourceNPC>
+			<text>Not all goblins are evil you know.</text>
+      <options>
+        <option targetnode="5">Im sorry i didn't know.</option>
+        <option targetnode="6">i have to go bye.</option>
+      </options>
+      <targetnodes>
+        <targetnode>4</targetnode>
+        <targetnode>6</targetnode>
+      </targetnodes>
+		</message>
+		<message id="4">
+			<sourceNPC>Goblin guy</sourceNPC>
+			<text>Pleased to meet you [player_name].</text>
+      <options>
+        <option targetnode="6">Likewise. But i have to go</option>
+      </options>
+      <targetnodes>
+        <targetnode>6</targetnode>
+      </targetnodes>
+		</message>
+    <message id="5">
+      <sourceNPC>Goblin guy</sourceNPC>
+      <text>Its okay im used to it</text>
+      <options>
+        <option targetnode="6">I´m sorry but i have to go</option>
+      </options>
+      <targetnodes>
+        <targetnode>6</targetnode>
+      </targetnodes>
+    </message>
+		<message id="6">
+			<sourceNPC>Goblin guy</sourceNPC>
+			<text>Farewell</text>
+      <options>
+        <option targetnode="0">yeah bye.</option>
+      </options>
+      <targetnodes>
+        <targetnode>0</targetnode>
+      </targetnodes>
+		</message>
+	</messages>
+</dialogues>
