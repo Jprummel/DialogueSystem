@@ -3,19 +3,15 @@ using UnityEngine.UI;
 
 public class DialogueLoader : MonoBehaviour {
     
-    [Header("Load Dialogue File")]
+    [Header("Load XML Dialogue File")]
     [SerializeField]private TextAsset   _diaFile;
 
     [Header("Text Objects")]
-    [SerializeField]private Text        _sourceNPC;     //Npc thats talking
-    [SerializeField]private Text        _speech;        //The npc's dialogue
-    //[SerializeField]private Button[]    _options;       //The players response options
-
-
+    [SerializeField]private Text    _sourceNPC;     //Npc thats talking
+    [SerializeField]private Text    _dialogueSpeech;//The npc's dialogue
     private Dialogue                _currentDia;    //Current dialogue
-    private DialogueOptionButtons   _diaButtons;    //response buttons
-    //Create dialogue container
-    private DialogueContainer       _diaContainer;
+    private DialogueOptionButtons   _diaButtons;    //Response buttons
+    private DialogueContainer       _diaContainer;  //Create dialogue container
 
     void Start ()
     {
@@ -43,8 +39,8 @@ public class DialogueLoader : MonoBehaviour {
                                 
                 if (_currentDia.Options.Length > 0)
                 {
-                    _diaButtons.RemoveButtons();                //Removes buttons that arent used
-                    _diaButtons.AddButtons(_currentDia);   // Adds buttons equal to the amount of responses/options to the current dialogue
+                    _diaButtons.RemoveButtons();            //Removes buttons that arent used
+                    _diaButtons.AddButtons(_currentDia);    // Adds buttons equal to the amount of responses/options to the current dialogue
                 }
                 else
                 {
@@ -57,8 +53,8 @@ public class DialogueLoader : MonoBehaviour {
     void GetDialogue(Dialogue dialogue)
     {
         //sets the text for the current dialog and shows the name of the NPC talking
-        _currentDialogue    = dialogue;
-        _sourceNPC.text     = _currentDialogue.SourceNPC;
-        _speech.text        = _currentDialogue.Text;
+        _currentDia             = dialogue;
+        _sourceNPC.text         = _currentDia.SourceNPC;
+        _dialogueSpeech.text    = _currentDia.Text;
     }
 }
