@@ -9,6 +9,7 @@ public class DialogueLoader : MonoBehaviour {
     [Header("Text Objects")]
     [SerializeField]private Text    _sourceNPC;     //Npc thats talking
     [SerializeField]private Text    _dialogueSpeech;//The npc's dialogue
+
     private Dialogue                _currentDia;    //Current dialogue
     private DialogueOptionButtons   _diaButtons;    //Response buttons
     private DialogueContainer       _diaContainer;  //Create dialogue container

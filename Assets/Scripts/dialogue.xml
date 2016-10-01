@@ -6,12 +6,12 @@
 			<text>Hi there</text>
       <options>
 			  <option targetnode="2">Uhm ... hi.</option>
-			  <option targetnode="3">Hi there my name is [player_name].</option>
+			  <option targetnode="4">Hi there my name is [player_name].</option>
 			  <option targetnode="6">I have to go.</option>
       </options>
       <targetnodes>
         <targetnode>2</targetnode>
-        <targetnode>3</targetnode>
+        <targetnode>4</targetnode>
         <targetnode>6</targetnode>
       </targetnodes>
 		</message>
